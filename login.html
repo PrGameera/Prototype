@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="Ifisc" />
+		<meta name="description" content="Gameera" />
+		<meta name="Author" content="Gameera develop team - www.gameera.io" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="icon" href="img/animated_favicon1.gif" type="image/gif" />
+		<title>Gameera</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:100,300,400,600" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/gameera.less" rel="stylesheet/less" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+        <script src="js/less-1.3.1.min.js" type="text/javascript"></script>
+	</head>
+
+	<body id="loginPage">
+
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gameeraMenu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="img/gameera.png" alt="Gameera" /></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="gameeraMenu">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MyGameera <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> <!-- end navbar-collapse -->
+                </div> <!-- end container-fluid -->
+            </nav>
+        </header>
+
+        <div id="formPage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Sign in</h1>
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#user" aria-controls="home" role="tab" data-toggle="tab">User</a></li>
+                            <li role="presentation"><a href="#professional" aria-controls="profile" role="tab" data-toggle="tab">Professional</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="user">
+                                <div class="infoLogin">
+                                    <h2>Yes, I am a particular user</h2>
+                                    <p>
+                                        Explanation about how works to be a particular user in GAMEERA.IO. <br/>
+                                        The explanation continues here, <br/>
+                                        and a little bit more over here.
+                                    </p>
+                                    <small>(Fields market with * are required)</small>
+                                </div>
+                                <form action="">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label>User name *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label>Email *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password * <span>(8 characters or more)</span></label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Repeat the password *</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </fieldset>
+                                    <div class="actions">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> I accept the <a href="#" data-toggle="modal" data-target="#legal">terms and conditions</a> of the service.
+                                            </label>
+                                        </div>
+                                        <input type="submit" class="btn btn-user" value="Create account" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="professional">
+                                <div class="infoLogin">
+                                    <h2>Yes, I am a professional user</h2>
+                                    <p>
+                                        Explanation about how works to be a particular user in GAMEERA.IO. <br/>
+                                        The explanation continues here, <br/>
+                                        and a little bit more over here.
+                                    </p>
+                                    <small>(Fields market with * are required)</small>
+                                </div>
+                                <form action="">
+                                    <fieldset class="border">
+                                        <div class="form-group">
+                                            <label>User name *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password * <span>(8 characters or more)</span></label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Repeat the password *</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label>Select your business *</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Company name *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Corporate name *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Business ID *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Country *</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>City *</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ZIP / Postal code *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Adress *</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Contact email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </fieldset>
+                                    <div class="actions">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> I accept the <a href="#" data-toggle="modal" data-target="#legal">sterms and conditions</a> of the service.
+                                            </label>
+                                        </div>
+                                        <input type="submit" class="btn btn-user" value="Create account" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end tab-content -->
+                    </div>
+                </div> <!-- end row -->
+            </div>
+        </div>
+
+        <footer>
+			<div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <p class="pull-left">
+                            <span>Gameera 2016 &copy;</span>
+                            <a href="#" data-toggle="modal" data-target="#legal">Legal</a>
+                        </p>
+                        <ul class="list-inline">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="scrollUp" href="#"><i class="fa fa-chevron-up"></i></a>
+		</footer>
+
+        <!-- modal legal -->
+        <div class="modal fade" id="legal" tabindex="-1" role="dialog" aria-labelledby="legal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Aviso legal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc felis, faucibus nec fermentum quis, luctus a urna.
+                            Ut id aliquam massa. Phasellus mollis dolor nec lacus sodales, eu blandit ex interdum. Sed lacinia neque turpis. Maecenas et venenatis neque.
+                            Sed sodales ligula vitae imperdiet elementum. Cras commodo lorem quis erat venenatis ultricies.</p>
+                        <p>Duis in cursus nunc. Nulla feugiat mattis orci. Aliquam ligula nisl, scelerisque vel ex sed, iaculis consequat neque.
+                            Praesent et eros eget mi luctus ultricies ut ut dolor. Vivamus cursus imperdiet nisi quis sollicitudin. Nullam a arcu sed ex lacinia cursus.
+                            Mauris urna neque, tristique non lobortis sit amet, pulvinar et nisl.</p>
+                        <p>Morbi sit amet aliquam neque, ut congue metus. Nullam non euismod sem. Fusce eu magna ac lorem vulputate accumsan id eu justo.
+                            Donec gravida urna nisl, quis aliquam magna egestas ac. Morbi scelerisque neque eu nibh condimentum, et mattis urna porttitor.
+                            Donec vulputate faucibus lorem, at viverra velit luctus at. In vel erat risus. Praesent id vehicula lacus, a scelerisque ipsum.
+                            Curabitur placerat at dolor aliquet tristique. Nullam consectetur fringilla dolor et viverra. Integer congue tellus lacus, at pellentesque sapien porttitor id.
+                            Cras ipsum risus, tincidunt a rutrum eu, pretium ac dolor. Nam ut felis convallis, porttitor risus sit amet, pellentesque tellus. Maecenas convallis sit amet justo faucibus mollis.</p>
+                        <p>Nam tellus quam, cursus vitae enim at, mattis aliquet felis. Nullam rutrum metus et est hendrerit condimentum. Nunc ornare congue accumsan.
+                            Cras in augue eget dui sollicitudin tempus sed ac massa. Donec in nulla ante. Ut consequat velit ac nibh mattis, sit amet porta enim feugiat.
+                            Nunc dapibus risus massa. Nunc ultricies lectus ante, aliquam imperdiet lectus bibendum at. Fusce at ante odio. Quisque vestibulum neque vitae augue pulvinar, eget maximus arcu interdum.</p>
+                        <p>Aliquam volutpat turpis urna, sed vehicula risus molestie in. Curabitur mattis placerat turpis vel volutpat.
+                            Maecenas malesuada nunc nec sem mattis, sed tristique tellus scelerisque. Donec eu risus a erat efficitur varius. Sed imperdiet lorem ac ex congue commodo.
+                            Ut sagittis dignissim maximus. Sed nec suscipit diam. Sed in rhoncus metus, non dictum mi. Suspendisse egestas felis sem, sit amet viverra dui pharetra ut.
+                            Aliquam nec urna nibh. Mauris ac elit et nulla commodo auctor nec vitae dui. Nam at metus ut neque congue egestas. Pellentesque feugiat ultricies ultrices.
+                            Sed molestie mi vitae facilisis ultricies. Morbi nulla eros, sodales ut augue eget, lobortis ornare eros. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-corporate" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal legal -->
+
+        <!-- modal login -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Acceso a intranet</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="alert alert-danger" role="alert">
+                                Por favor, corrige los errores marcados en rojo.
+                            </div>
+                            <div class="form-group">
+                                <label>Usuario</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group has-error">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <input type="submit" class="btn btn-corporate" value="enviar">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-corporate" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal login -->
+
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // scroll to top
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollUp').fadeIn();
+                    } else {
+                        $('.scrollUp').fadeOut();
+                    }
+                });
+
+                $('.scrollUp').click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+
+                // abrir opciones buscador
+                $('#bigInput').click(function() {
+                    $('#optionsSearcher').slideToggle('slow', function() {});
+                });
+                $(document).mouseup(function (e)
+                {
+                    var container = $('#optionsSearcher');
+                    if (!container.is(e.target) // if the target of the click isn't the container...
+                        && container.has(e.target).length === 0) // ... nor a descendant of the container
+                    {
+                        container.hide();
+                    }
+                });
+
+                // cerrar CookielawBanner
+                $('#closeCookielaw').click(function() {
+                    $('#CookielawBanner').slideToggle('slow', function() {});
+                });
+            });
+        </script>
+
+        <div id="CookielawBanner">
+            <div class="m_cookies">
+                <a href="#" id="closeCookielaw"><i class="fa fa-times"></i></a>
+                <p>
+                    This website uses cookies to offer you the best experience online.
+                    By continuing to use our website, you agree to the use of cookies.
+                    If you would like to know more about cookies please <a href="#">click here</a>
+                </p>
+            </div>
+        </div>
+
+	</body>
+</html>
